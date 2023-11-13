@@ -17,8 +17,8 @@ const ContactLink = ({ href, children }) => {
 
 export const ContactSection = () => {
   return (
-    <section className="bg-green-700 max-w-xs text-white text-sm flex flex-col gap-4 px-10 pt-96 pb-16">
-      <div className="flex flex-col gap-1">
+    <section className="bg-green-700 max-w-xs flex-1 text-white text-sm flex flex-col gap-4 px-8 pt-96 pb-12">
+      <div className="flex flex-col gap-2">
         <div className="flex gap-1">
           <EmailIcon />
           Email
@@ -30,7 +30,7 @@ export const ContactSection = () => {
 
       <hr className="border-8 border-gray-100 -mx-10" />
 
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-2">
         Find me on
         <div className="flex gap-3">
           <ContactLink href="https://github.com/kim-fransson">
