@@ -4,9 +4,9 @@ import profileImage from "./assets/images/user-photo.jpg";
 export default function App() {
   return (
     <div className="bg-green-200 min-h-screen flex items-center justify-center">
-      <main className="flex bg-white rounded-3xl max-w-5xl w-full shadow-2xl overflow-hidden relative">
+      <main className="flex bg-white rounded-3xl max-w-6xl w-full h-[667px] shadow-2xl overflow-hidden relative">
         <img
-          className="absolute object-cover top-8 left-[17rem] w-[300px] h-[475px]"
+          className="absolute object-cover top-8 left-80 w-[340px] h-[550px]"
           src={profileImage}
           alt=""
         />

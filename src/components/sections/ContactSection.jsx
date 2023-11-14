@@ -5,7 +5,9 @@ import LinkedinIcon from "../../assets/icons/linkedin-icon.svg?react";
 const ContactLink = ({ href, children }) => {
   return (
     <a
-      className="text-gray-300 transition-colors hover:text-white outline-none border focus-visible:border-white border-transparent focus-visible:text-white rounded-md"
+      className="text-white/60 w-fit inline-block transition-colors relative rounded-md outline-none 
+        hover:text-white focus-visible:text-white focus-visible:after:opacity-100 focus-visible:after:translate-y-1
+        after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[0.1em] after:bg-white after:opacity-0 after:transition-all after:duration-300"
       target="_blank"
       rel="noreferrer"
       href={href}
@@ -17,8 +19,8 @@ const ContactLink = ({ href, children }) => {
 
 export const ContactSection = () => {
   return (
-    <section className="bg-green-700 max-w-xs flex-1 text-white text-sm flex flex-col gap-4 px-8 pt-96 pb-12">
-      <div className="flex flex-col gap-2">
+    <section className="bg-green-700 w-96 text-white px-10 pb-20 flex flex-col justify-end">
+      <div className="flex flex-col gap-2 mb-9">
         <div className="flex gap-1">
           <EmailIcon />
           Email
@@ -28,11 +30,11 @@ export const ContactSection = () => {
         </ContactLink>
       </div>
 
-      <hr className="border-8 border-gray-100 -mx-10" />
+      <div className="h-5 bg-gray-300 -mx-10" />
 
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-3 font-semibold mt-6">
         Find me on
-        <div className="flex gap-3">
+        <div className="flex gap-4">
           <ContactLink href="https://github.com/kim-fransson">
             <GithubIcon />
           </ContactLink>
