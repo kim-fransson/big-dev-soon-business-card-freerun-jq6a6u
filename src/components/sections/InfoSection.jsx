@@ -3,55 +3,55 @@ export const InfoSection = () => {
     "animate-fade-left animate-duration-[500ms] animate-once animate-ease-out animate-fill-forwards opacity-0";
 
   return (
-    <section className="flex flex-col xl:pl-80 md:pt-20 pt-10 px-10 flex-1 gap-5">
+    <section className="flex flex-1 flex-col gap-5 px-10 pt-10 md:pt-20 xl:pl-80">
       <h1
-        className={`md:text-5xl text-4xl font-semibold flex flex-col uppercase animate-delay-[500ms] ${fadeIn}`}
+        className={`flex flex-col text-4xl font-semibold uppercase animate-delay-[500ms] md:text-5xl ${fadeIn}`}
       >
-        <span className="text-green-700">Kim</span> Fransson
+        <span className="text-rose-600">Kim</span> Fransson
       </h1>
       <div>
         <h2
-          className={`font-semibold mb-3 md:text-lg flex items-center gap-2 animate-delay-[1000ms] ${fadeIn}`}
+          className={`mb-3 flex items-center gap-2 font-semibold animate-delay-[1000ms] md:text-lg ${fadeIn}`}
         >
           <span>Fullstack Developer</span>
           <span>&#x2022;</span>
           <span>Malmö</span>
         </h2>
-        <p className={`${fadeIn} animate-delay-[1500ms] md:text-base text-sm`}>
-          Experienced Fullstack Developer, dedicated to streamlining developer
-          workflows. Adept at collaborating with UX and design teams to
-          meticulously craft and execute technical specifications for websites
-          and applications, consistently upholding a standard of uncompromising
-          quality in user experience.
+        <p className={`${fadeIn} text-sm animate-delay-[1500ms] md:text-base`}>
+          I&rsquo;m an experienced Fullstack Developer who&rsquo;s all about
+          making things run smoothly for developers. I work closely with UX and
+          design teams to nail down the details and bring technical plans to
+          life for websites and apps. My focus is always on keeping the user and
+          developer experience top-notch.
         </p>
       </div>
 
       <div>
         <h2
-          className={`font-semibold mb-3 md:text-lg ${fadeIn} animate-delay-[2000ms]`}
+          className={`mb-3 font-semibold md:text-lg ${fadeIn} animate-delay-[2000ms]`}
         >
           Working with technologies:
         </h2>
-        <ul className="flex flex-col gap-3 list-disc list-inside pl-1 md:text-base text-sm">
+        <ul className="flex flex-col gap-3 pl-1 text-sm md:text-base">
           <li
-            className={`${fadeIn} animate-duration-[400ms] animate-delay-[2500ms]`}
+            className={`${fadeIn} animate-delay-[2500ms] animate-duration-[400ms]`}
           >
-            JavaScript
+            🔥 Javascript
           </li>
           <li
-            className={`${fadeIn} animate-duration-[400ms]  animate-delay-[2800ms]`}
+            className={`${fadeIn} animate-delay-[2800ms]  animate-duration-[400ms]`}
           >
-            React
+            💻 React
           </li>
           <li
-            className={`${fadeIn} animate-duration-[400ms] animate-delay-[3100ms]`}
+            className={`${fadeIn} animate-delay-[3100ms] animate-duration-[400ms]`}
           >
-            Tailwindcss
+            💅🏻 CSS + PostCSS + Tailwindcss
           </li>
           <li
-            className={`${fadeIn} animate-duration-[400ms] animate-delay-[3400ms]`}
+            className={`${fadeIn} animate-delay-[3400ms] animate-duration-[400ms]`}
           >
-            Storybook
+            🎨 Storybook
           </li>
         </ul>
       </div>

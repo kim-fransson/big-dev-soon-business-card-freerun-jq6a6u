@@ -23,6 +23,6 @@
 
 @layer utilities {
   .fade-in {
-    @apply opacity-0 animate-fade-left animate-once animate-duration-500 animate-ease-in animate-fill-forwards;
+    @apply animate-fade-left opacity-0 animate-duration-500 animate-fill-forwards animate-once animate-ease-in;
   }
 }
