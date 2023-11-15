@@ -4,7 +4,12 @@ import tailwindcssAnimated from "tailwindcss-animated";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        sm: "450px",
+        // => @media (min-width: 992px) { ... }
+      },
+    },
   },
   plugins: [tailwindcssAnimated],
 };

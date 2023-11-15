@@ -21,11 +21,14 @@ const ContactLink = ({ href, children }) => {
 
 export const ContactSection = () => {
   return (
-    <section className="bg-green-700 xl:w-96 text-white pt-10 px-10 pb-20 flex flex-col justify-end">
-      <div className="overflow-hidden w-52 h-52 rounded-full mb-auto xl:hidden">
+    <section
+      className="bg-green-700 xl:w-96 text-white pt-10 px-10 sm:pb-20 pb-10 md:flex md:flex-col md:justify-end
+      md:items-stretch grid sm:grid-cols-2 grid-cols-1 sm:items-center md:text-base text-sm justify-items-center sm:justify-items-start sm:gap-2 gap-4"
+    >
+      <div className="overflow-hidden md:w-52 md:h-52 sm:w-44 sm:h-44 w-36 h-36 rounded-full mb-auto xl:hidden">
         <img src={profileImage} className="object-cover h-full w-full" alt="" />
       </div>
-      <div className="flex flex-col gap-2 mb-9">
+      <div className="flex flex-col gap-2 md:mb-9 sm:col-start-2 sm:row-start-1 sm:mb-20 items-center sm:items-start">
         <div className="flex gap-1">
           <EmailIcon />
           Email
@@ -35,9 +38,9 @@ export const ContactSection = () => {
         </ContactLink>
       </div>
 
-      <div className="h-5 bg-gray-300 -mx-10" />
+      <div className="h-5 bg-gray-300 -mx-10 hidden md:block" />
 
-      <div className="flex flex-col gap-3 font-semibold mt-6">
+      <div className="flex flex-col gap-3 font-semibold md:mt-6 sm:col-start-2 sm:row-start-1 sm:mt-20 sm:items-start items-center">
         Find me on
         <div className="flex gap-4">
           <ContactLink href="https://github.com/kim-fransson">

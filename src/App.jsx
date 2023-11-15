@@ -5,8 +5,8 @@ export default function App() {
   return (
     <div className="bg-green-200 min-h-screen flex items-center justify-center">
       <main
-        className="flex bg-white mx-10 rounded-3xl max-w-6xl w-full h-[667px] shadow-2xl overflow-hidden relative
-        animate-fade-up animate-once animate-duration-500 animate-ease-in animate-fill-forwards"
+        className="flex md:flex-row flex-col bg-white md:mx-10 md:rounded-3xl max-w-6xl w-full md:h-[667px] md:min-h-0 min-h-screen shadow-2xl overflow-hidden relative
+        animate-fade-up animate-once animate-duration-500 animate-ease-in animate-fill-forwards md:pb-0 pb-10"
       >
         <img
           className="xl:block hidden absolute object-cover top-8 left-80 w-[340px] h-[550px] z-10"
