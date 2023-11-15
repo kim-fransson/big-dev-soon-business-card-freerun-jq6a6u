@@ -2,6 +2,8 @@ import EmailIcon from "../../assets/icons/email-icon.svg?react";
 import GithubIcon from "../../assets/icons/github-icon.svg?react";
 import LinkedinIcon from "../../assets/icons/linkedin-icon.svg?react";
 
+import profileImage from "../../assets/images/user-photo-mobile.jpg";
+
 const ContactLink = ({ href, children }) => {
   return (
     <a
@@ -19,7 +21,10 @@ const ContactLink = ({ href, children }) => {
 
 export const ContactSection = () => {
   return (
-    <section className="bg-green-700 w-96 text-white px-10 pb-20 flex flex-col justify-end">
+    <section className="bg-green-700 xl:w-96 text-white pt-10 px-10 pb-20 flex flex-col justify-end">
+      <div className="overflow-hidden w-52 h-52 rounded-full mb-auto xl:hidden">
+        <img src={profileImage} className="object-cover h-full w-full" alt="" />
+      </div>
       <div className="flex flex-col gap-2 mb-9">
         <div className="flex gap-1">
           <EmailIcon />

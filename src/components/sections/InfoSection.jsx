@@ -3,7 +3,7 @@ export const InfoSection = () => {
     "animate-fade-left animate-duration-[500ms] animate-once animate-ease-out animate-fill-forwards opacity-0";
 
   return (
-    <section className="flex flex-col pl-80 pt-20 pr-10 flex-1 gap-5">
+    <section className="flex flex-col xl:pl-80 pt-20 px-10 flex-1 gap-5">
       <h1
         className={`text-5xl font-semibold flex flex-col uppercase animate-delay-[500ms] ${fadeIn}`}
       >
