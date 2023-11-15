@@ -2,6 +2,8 @@
 
 Project designed from [BigDevSoon](https://app.bigdevsoon.me/projects/business-card)
 
+Live demo https://business-card.made-by-kim.com/
+
 ## Previews
 
 ### Desktop
